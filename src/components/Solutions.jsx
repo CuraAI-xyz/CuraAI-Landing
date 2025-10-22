@@ -2,29 +2,31 @@ import SolutionCard from "./SolutionCard";
 function Solutions() {
     const sols = [
         {
-            title: "AI-Powered Diagnostics",
+            title: "Voice-Based AI Agent",
             image: "./robot.png",
-            description: "Enhance diagnostic accuracy with machine learning algorithms that analyze medical images and patient data."
+            description: "Natural voice conversations that gather patient history, symptoms, and context through intelligent follow-up questions."
         },
         {
-            title: "Automated Patient Monitoring",
+            title: "Secure Medical Intake",
             image: "./automation.png",
-            description: "Real-time monitoring of patient vitals using AI to alert healthcare providers of any anomalies."
+            description: "All patient data processed in Trusted Execution Environments (TEEs) ensuring complete privacy and confidentiality."
         },
         {
-            title: "Predictive Analytics for Healthcare",
+            title: "Intelligent Clinical Summaries",
             image: "./data-analytics.png",
-            description: "Leverage big data and AI to predict patient outcomes and optimize treatment plans."
+            description: "Structured clinical notes with symptom clusters, medical history, and smart routing to appropriate care providers."
         }
     ]
   return (
-    <div className="pt-20 pb-20" id="solutions">
-        <h2 className="font-rubik text-center text-gray-900 font-bold text-5xl">Our Solutions</h2>
-        <p className="font-rubik text-center text-gray-700">Discover how our work is transforming the healthcare sector</p>
-        <div className="flex gap-4 p-8 justify-center">
-        {sols.map((sol, i) => (
-            <SolutionCard key={i} title={sol.title} image={sol.image} description={sol.description}/>
-        ))}
+    <div className="py-16 lg:py-20 px-4" id="solutions">
+        <div className="max-w-6xl mx-auto">
+            <h2 className="font-rubik text-center text-gray-900 font-bold text-3xl lg:text-4xl mb-3">Our Solutions</h2>
+            <p className="font-rubik text-center text-gray-600 text-base lg:text-lg mb-12 max-w-2xl mx-auto">Discover how CuraAI streamlines healthcare intake while protecting patient privacy</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {sols.map((sol, i) => (
+                <SolutionCard key={i} title={sol.title} image={sol.image} description={sol.description}/>
+            ))}
+            </div>
         </div>
 </div>
   )

@@ -1,11 +1,11 @@
 function HomeText() {
   return (
-    <div className="text-center p-8">
-      <div className="flex flex-row items-center justify-center w-full gap-4 p-4">
-        <h1 className="font-rubik text-8xl text-gray-900 font-bold">AI that understands <br></br> your health</h1>
-      </div>
-      <p className="font-rubik text-lg w-8/12 mx-auto mt-6 text-center text-gray-600">
-       We empower medicine with artificial intelligence to optimize diagnoses, automate tasks, and improve the lives of patients and professionals.
+    <div className="text-center px-4 py-8 max-w-4xl mx-auto">
+      <h1 className="font-rubik text-4xl sm:text-5xl lg:text-6xl text-gray-900 font-bold leading-tight mb-6">
+        Privacy-First Voice AI <br className="hidden sm:block"></br> for Telehealth Intake
+      </h1>
+      <p className="font-rubik text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        CuraAI automates medical intake and triage through natural voice conversations, using secure AI to help doctors act faster while keeping patient data completely private.
       </p>
     </div>
   );
