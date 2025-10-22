@@ -3,7 +3,9 @@ import Header from './components/Header'
 import Home from './components/Home'
 import Solutions from './components/Solutions'
 import Footer from './components/Footer'
+import Support from './components/Support'
 import QA from './components/QA'
+import Videos from './components/Videos'
 function App() {
  
   return (
@@ -14,7 +16,9 @@ function App() {
     </div>
     <div className='bg-solutions'>
     <Solutions/>
+    <Support/>
     <QA/>
+    <Videos/>
     </div>
     <Footer/>
     </main>

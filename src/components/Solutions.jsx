@@ -19,7 +19,7 @@ function Solutions() {
     ]
   return (
     <div className="pt-20 pb-20" id="solutions">
-        <h2 className="font-rubik text-center text-gray-900 font-bold text-3xl">Our Solutions</h2>
+        <h2 className="font-rubik text-center text-gray-900 font-bold text-5xl">Our Solutions</h2>
         <p className="font-rubik text-center text-gray-700">Discover how our work is transforming the healthcare sector</p>
         <div className="flex gap-4 p-8 justify-center">
         {sols.map((sol, i) => (
